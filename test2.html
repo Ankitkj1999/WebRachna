@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (min-width: 430px) {
+  div.navbar {
+    display: none;
+  }
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+.btn-group button {
+  background-color: #fdfdfd; /* Green background */
+  border: 1px solid rgb(255, 255, 255); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="navbar" id="myNavbar" style="width: 100%;">
+  
+    <div class="btn-group" style="width: 100%;">
+      <button style="width:25%">  <img src="img/mob/11.png" width="30px"> </button>
+      <button style="width:25%"><img src="img/mob/22.png" width="30px" ></button>
+      <button style="width:25%"><img src="img/mob/33.png" width="30px"></button>
+      <button style="width:25%"><img src="img/mob/44.png" width="33px"></button>
+    </div>
+    
+      
+    </div>
+
+
+
+</body>
+</html>

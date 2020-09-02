@@ -1,0 +1,927 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Web Rachna | Prising</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+        
+      
+        
+        /*PRICE COLOR CODE START*/
+        #generic_price_table .generic_content{
+            background-color: #fff;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price{
+            background-color: #f6f6f6;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+            border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+            color: #525252;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+            color: #414141;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+            color: #414141;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+            color: #414141;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+            color: #414141;
+        }
+        
+        #generic_price_table .generic_content .generic_feature_list ul li{	
+            color: #a7a7a7;
+        }
+        
+        #generic_price_table .generic_content .generic_feature_list ul li span{
+            color: #414141;
+        }
+        #generic_price_table .generic_content .generic_feature_list ul li:hover{
+            background-color: #E4E4E4;
+            border-left: 5px solid #a200ff;
+        }
+        
+        #generic_price_table .generic_content .generic_price_btn a{
+            border: 1px solid #a200ff;; 
+            color: #a200ff;;
+        } 
+        
+        #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
+            border-color: #8c00ff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #911cff;
+            color: #fff;
+        }
+        
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
+        #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
+            color: #fff;
+        }
+        
+        #generic_price_table .generic_content:hover .generic_price_btn a,
+        #generic_price_table .generic_content.active .generic_price_btn a{
+            background-color:#a200ff;
+            color: #fff;
+        } 
+        #generic_price_table{
+            margin: 50px 0 50px 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        .row .table{
+            padding: 28px 0;
+        }
+        
+        /*PRICE BODY CODE START*/
+        
+        #generic_price_table .generic_content{
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price {
+            margin: 0 0 20px 0;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content{
+            margin: 0 0 50px 0;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+            border-style: solid;
+            border-width: 90px 1411px 23px 399px;
+            position: absolute;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head{
+            padding-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+            font-family: "Raleway",sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag{
+            padding: 0 0 20px;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price{
+            display: block;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
+            display: inline-block;
+            font-family: "Lato",sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            vertical-align: middle;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
+            font-family: "Lato",sans-serif;
+            font-size: 60px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            line-height: 60px;
+            padding: 0;
+            vertical-align: middle;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
+            display: inline-block;
+            font-family: "Lato",sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            vertical-align: bottom;
+        }
+        
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
+            font-family: "Lato",sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            vertical-align: bottom;
+        }
+        
+        #generic_price_table .generic_content .generic_feature_list ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #generic_price_table .generic_content .generic_feature_list ul li{
+            font-family: "Lato",sans-serif;
+            font-size: 18px;
+            padding: 15px 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table .generic_content .generic_feature_list ul li:hover{
+            transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+        
+        }
+        #generic_price_table .generic_content .generic_feature_list ul li .fa{
+            padding: 0 10px;
+        }
+        #generic_price_table .generic_content .generic_price_btn{
+            margin: 20px 0 32px;
+        }
+        
+        #generic_price_table .generic_content .generic_price_btn a{
+            border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            display: inline-block;
+            font-family: "Lato",sans-serif;
+            font-size: 18px;
+            outline: medium none;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        #generic_price_table .generic_content,
+        #generic_price_table .generic_content:hover,
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head h2,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head h2,
+        #generic_price_table .generic_content .price,
+        #generic_price_table .generic_content:hover .price,
+        #generic_price_table .generic_content .generic_price_btn a,
+        #generic_price_table .generic_content:hover .generic_price_btn a{
+            transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+        } 
+        @media (max-width: 320px) {	
+        }
+        
+        @media (max-width: 767px) {
+            #generic_price_table .generic_content{
+                margin-bottom:75px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            #generic_price_table .col-md-3{
+                float:left;
+                width:50%;
+            }
+            
+            #generic_price_table .col-md-4{
+                float:left;
+                width:50%;
+            }
+            
+            #generic_price_table .generic_content{
+                margin-bottom:75px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+        }
+        @media (min-width: 1200px) {
+        }
+        #generic_price_table_home{
+             font-family: 'Raleway', sans-serif;
+        }
+        
+        .text-center h1,
+        .text-center h1 a{
+            color: #7885CB;
+            font-size: 30px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+        .demo-pic{
+            margin: 0 auto;
+        }
+        .demo-pic:hover{
+            opacity: 0.7;
+        }
+        
+        #generic_price_table_home ul{
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: table;
+        }
+        #generic_price_table_home li{
+            float: left;
+        }
+        #generic_price_table_home li + li{
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+        #generic_price_table_home li a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            font-size: 0px;
+        }
+        #generic_price_table_home .blue{
+            background: #3498DB;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .emerald{
+            background: #a200ff;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .grey{
+            background: #7F8C8D;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .midnight{
+            background: #34495E;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .orange{
+            background: #E67E22;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .purple{
+            background: #9B59B6;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .red{
+            background: #E74C3C;
+            transition:all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .turquoise{
+            background: #a200ff;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        
+        #generic_price_table_home .blue:hover,
+        #generic_price_table_home .emerald:hover,
+        #generic_price_table_home .grey:hover,
+        #generic_price_table_home .midnight:hover,
+        #generic_price_table_home .orange:hover,
+        #generic_price_table_home .purple:hover,
+        #generic_price_table_home .red:hover,
+        #generic_price_table_home .turquoise:hover{
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #generic_price_table_home .divider{
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        #generic_price_table_home .divider span{
+            width: 100%;
+            display: table;
+            height: 2px;
+            background: #ddd;
+            margin: 50px auto;
+            line-height: 2px;
+        }
+        #generic_price_table_home .itemname{
+            text-align: center;
+            font-size: 50px ;
+            padding: 50px 0 20px ;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px;
+            text-decoration: none;
+            font-weight: 300;
+        }
+        #generic_price_table_home .itemnametext{
+            text-align: center;
+            font-size: 20px;
+            padding-top: 5px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        #generic_price_table_home .footer{
+            padding:40px 0;
+        }
+        
+        .price-heading{
+            text-align: center;
+        }
+        .price-heading h1{
+            color: #666;
+            margin: 0;
+            padding: 0 0 50px 0;
+        }
+        .demo-button {
+            background-color: #333333;
+            color: #ffffff;
+            display: table;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            outline-color: -moz-use-text-color;
+            outline-style: none;
+            outline-width: medium ;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .bottom_btn{
+            background-color: #333333;
+            color: #ffffff;
+            display: table;
+            font-size: 28px;
+            margin: 60px auto 20px;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .demo-button:hover{
+            background-color: #666;
+            color: #FFF;
+            text-decoration:none;
+            
+        }
+        .bottom_btn:hover{
+            background-color: #666;
+            color: #FFF;
+            text-decoration:none;
+        }
+        </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 style="font-family: magneto, sans-serif; font-style: normal;
+                                    font-weight: 900; font-size: 3em; background: -webkit-linear-gradient(rgb(244, 119, 255), rgb(68, 48, 253));
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent; ">WR</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="Case_details.html">Case  details</a></li>
+                                                <li><a href="about.html">about</a></li>
+                                                <li><a href="elements.html">elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="Case_Study.html">Case Study</a></li>
+                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a  href="#"> <i class="fa fa-phone"></i> +91 9667267972</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="shap_big_2 d-none d-lg-block Another_shap_big">
+        <img src="img/ilstrator/big.png" alt="">
+    </div>
+    <!-- bradcam_area  -->
+    <div class="bradcam_area">
+            <div class="bradcam_shap">
+                <img src="img/ilstrator/bradcam_ils.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="bradcam_text text-center">
+                            <h3>Pricing</h3>
+                            <nav class="brad_cam_lists">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+                                  </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /bradcam_area  -->
+<!--prising-->
+
+<div id="generic_price_table">   
+    <section>
+      
+            <div class="container">
+                
+                <!--BLOCK ROW START-->
+                <div class="row">
+                    <div class="col-md-4">
+                    
+                        <!--PRICE CONTENT START-->
+                        <div class="generic_content clearfix">
+                            
+                            <!--HEAD PRICE DETAIL START-->
+                            <div class="generic_head_price clearfix">
+                            
+                                <!--HEAD CONTENT START-->
+                                <div class="generic_head_content clearfix">
+                                
+                                    <!--HEAD START-->
+                                    <div class="head_bg"></div>
+                                    <div class="head">
+                                        <span>Basic</span>
+                                    </div>
+                                    <!--//HEAD END-->
+                                    
+                                </div>
+                                <!--//HEAD CONTENT END-->
+                                
+                                <!--PRICE START-->
+                                <div class="generic_price_tag clearfix">	
+                                    <span class="price">
+                                        <span class="sign">₹</span>
+                                        <span class="currency">99</span>
+                                        <span class="cent">.99</span>
+                                        <span class="month">/MON</span>
+                                    </span>
+                                </div>
+                                <!--//PRICE END-->
+                                
+                            </div>                            
+                            <!--//HEAD PRICE DETAIL END-->
+                            
+                            <!--FEATURE LIST START-->
+                            <div class="generic_feature_list">
+                                <ul>
+                                    <li><span>2GB</span> Bandwidth</li>
+                                    <li><span>150GB</span> Storage</li>
+                                    <li><span>12</span> Accounts</li>
+                                    <li><span>7</span> Host Domain</li>
+                                    <li><span>24/7</span> Support</li>
+                                </ul>
+                            </div>
+                            <!--//FEATURE LIST END-->
+                            
+                            <!--BUTTON START-->
+                            <div class="generic_price_btn clearfix">
+                                <a class="" href="">Sign up</a>
+                            </div>
+                            <!--//BUTTON END-->
+                            
+                        </div>
+                        <!--//PRICE CONTENT END-->
+                            
+                    </div>
+                    
+                    <div class="col-md-4">
+                    
+                        <!--PRICE CONTENT START-->
+                        <div class="generic_content active clearfix">
+                            
+                            <!--HEAD PRICE DETAIL START-->
+                            <div class="generic_head_price clearfix">
+                            
+                                <!--HEAD CONTENT START-->
+                                <div class="generic_head_content clearfix">
+                                
+                                    <!--HEAD START-->
+                                    <div class="head_bg"></div>
+                                    <div class="head">
+                                        <span>Standard</span>
+                                    </div>
+                                    <!--//HEAD END-->
+                                    
+                                </div>
+                                <!--//HEAD CONTENT END-->
+                                
+                                <!--PRICE START-->
+                                <div class="generic_price_tag clearfix">	
+                                    <span class="price">
+                                        <span class="sign">₹</span>
+                                        <span class="currency">199</span>
+                                        <span class="cent">.99</span>
+                                        <span class="month">/MON</span>
+                                    </span>
+                                </div>
+                                <!--//PRICE END-->
+                                
+                            </div>                            
+                            <!--//HEAD PRICE DETAIL END-->
+                            
+                            <!--FEATURE LIST START-->
+                            <div class="generic_feature_list">
+                                <ul>
+                                    <li><span>2GB</span> Bandwidth</li>
+                                    <li><span>150GB</span> Storage</li>
+                                    <li><span>12</span> Accounts</li>
+                                    <li><span>7</span> Host Domain</li>
+                                    <li><span>24/7</span> Support</li>
+                                </ul>
+                            </div>
+                            <!--//FEATURE LIST END-->
+                            
+                            <!--BUTTON START-->
+                            <div class="generic_price_btn clearfix">
+                                <a class="" href="">Sign up</a>
+                            </div>
+                            <!--//BUTTON END-->
+                            
+                        </div>
+                        <!--//PRICE CONTENT END-->
+                            
+                    </div>
+                    <div class="col-md-4">
+                    
+                        <!--PRICE CONTENT START-->
+                        <div class="generic_content clearfix">
+                            
+                            <!--HEAD PRICE DETAIL START-->
+                            <div class="generic_head_price clearfix">
+                            
+                                <!--HEAD CONTENT START-->
+                                <div class="generic_head_content clearfix">
+                                
+                                    <!--HEAD START-->
+                                    <div class="head_bg"></div>
+                                    <div class="head">
+                                        <span>Unlimited</span>
+                                    </div>
+                                    <!--//HEAD END-->
+                                    
+                                </div>
+                                <!--//HEAD CONTENT END-->
+                                
+                                <!--PRICE START-->
+                                <div class="generic_price_tag clearfix">	
+                                    <span class="price">
+                                        <span class="sign">₹</span>
+                                        <span class="currency">299</span>
+                                        <span class="cent">.99</span>
+                                        <span class="month">/MON</span>
+                                    </span>
+                                </div>
+                                <!--//PRICE END-->
+                                
+                            </div>                            
+                            <!--//HEAD PRICE DETAIL END-->
+                            
+                            <!--FEATURE LIST START-->
+                            <div class="generic_feature_list">
+                                <ul>
+                                    <li><span>2GB</span> Bandwidth</li>
+                                    <li><span>150GB</span> Storage</li>
+                                    <li><span>12</span> Accounts</li>
+                                    <li><span>7</span> Host Domain</li>
+                                    <li><span>24/7</span> Support</li>
+                                </ul>
+                            </div>
+                            <!--//FEATURE LIST END-->
+                            
+                            <!--BUTTON START-->
+                            <div class="generic_price_btn clearfix">
+                                <a class="" href="">Sign up</a>
+                            </div>
+                            <!--//BUTTON END-->
+                            
+                        </div>
+                        <!--//PRICE CONTENT END-->
+                            
+                    </div>
+                </div>	
+                <!--//BLOCK ROW END-->
+                
+            </div>
+        </section>             
+        
+    </div>
+    <!-- testimonial_area  -->
+    <div class="testimonial_area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
+                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
+                                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div>
+                                                <h3>Robert Thomson</h3>
+                                                <span>Business Owner</span>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
+                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
+                                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div>
+                                                <h3>Robert Thomson</h3>
+                                                <span>Business Owner</span>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
+                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
+                                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div>
+                                                <h3>Robert Thomson</h3>
+                                                <span>Business Owner</span>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /testimonial_area  -->
+
+    <footer class="footer">
+            <div class=" container">
+                <div class="pro_border">
+                        <div class="row">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="lets_projects">
+                                        <h3>Let’s Start your project, <a href="#">Call Us</a> </h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="phone_number">
+                                        <h3>+10 673 563 629</h3>
+                                        <a href="#">support@seogo.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <h1 style="font-family: magneto, sans-serif; font-style: normal;
+                                        font-weight: 900; font-size: 3em; background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent; ">WR</h1>
+                                    </a>
+                                </div>
+                                <p>
+                                        Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Services
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Marketing &amp; SEO</a></li>
+                                    <li><a href="#"> Startup</a></li>
+                                    <li><a href="#">Finance solution</a></li>
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Useful Links
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 offset-xl-1 col-md-6 col-lg-4">
+                                <div class="footer_widget">
+                                        <h3 class="footer_title">
+                                                Subscribe
+                                        </h3>
+                                        <form action="#" class="newsletter_form">
+                                            <input type="text" placeholder="Enter your mail">
+                                            <button type="submit">Subscribe</button>
+                                        </form>
+                                        <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Powered By Web Rachna</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
