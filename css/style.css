@@ -15,7 +15,164 @@
   /* IE6-9 */
 }
 
+/*zoom*/
+.zoom {
+  transition: transform .1s;
+}
 
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+/*svg*/
+.squiggle {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: draw 1.5s linear infinite alternate;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+
+p {
+  margin: 0.2rem;
+}
+
+svg {
+  width: 20vw;
+  fill: currentColor;
+}
+
+/*Button animation*/
+
+.ani{
+  position: relative;
+  animation-name: start_button;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes start_button{
+  0%{top: 0;border-radius: 50px;}
+  20%{border-radius: 45px;}
+  40%{border-radius: 40px;}
+  55%{top: 20px;border-radius: 42px;}
+  65%{top: 20px;border-radius: 45px;}
+  95%{top: 0px;border-radius: 47px;}
+  100%{top: 0px;border-radius: 50px;}
+}
+/*amin*/
+.anim{
+  position: relative;
+  animation-name: logo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes logo{
+  0%{background: -webkit-linear-gradient(rgb(244, 119, 255), rgb(68, 48, 253));-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  25%{background: -webkit-linear-gradient(rgb(139, 97, 255), rgb(50, 34, 194));-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  50%{background: -webkit-linear-gradient(rgb(128, 119, 255), rgb(68, 48, 253));-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  75%{background: -webkit-linear-gradient(rgb(238, 50, 255), rgb(29, 17, 129));-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  100%{background: -webkit-linear-gradient(rgb(47, 0, 255), rgb(9, 0, 92));-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+}
+
+/*Ball*/
+
+.ball { 
+			
+  animation: bounce 1.9s; 
+  animation-direction: alternate; 
+  animation-timing-function: cubic-bezier(5, 5, 5, 5); 
+  animation-iteration-count: infinite; 
+} 
+
+@keyframes bounce { 
+  from { 
+    transform: translate3d(0, 0, 0); 
+  } 
+  to { 
+    transform: translate3d(0, 10px, 0); 
+  } 
+} 
+/* Prefix Support */ 
+
+.ball { 
+  -webkit-animation-name: bounce; 
+  -webkit-animation-duration: 1.5s; 
+  -webkit-animation-direction: alternate; 
+  -webkit-animation-timing-function: cubic-bezier( 
+  5,5,5,5); 
+  -webkit-animation-iteration-count: infinite; 
+} 
+
+@-webkit-keyframes bounce { 
+  from { 
+    -webkit-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0); 
+  } 
+  to { 
+    -webkit-transform: translate3d(0, 10px, 0); 
+    transform: translate3d(0, 10px, 0); 
+  } 
+} 
+
+/*Balls*/
+
+.balls { 
+			
+  animation: bounces 1.9s; 
+  animation-direction: alternate; 
+  animation-timing-function: cubic-bezier(5, 5, 5, 5); 
+  animation-iteration-count: infinite; 
+} 
+
+@keyframes bounces { 
+  from { 
+    transform: translate3d(0, 0, 0); 
+  } 
+  to { 
+    transform: translate3d(-50px, -30px, 0px); 
+  } 
+} 
+/* Prefix Support */ 
+
+.balls { 
+  -webkit-animation-name: bounces; 
+  -webkit-animation-duration: 1.9s; 
+  -webkit-animation-direction: alternate; 
+  -webkit-animation-timing-function: cubic-bezier( 
+  5,5,5,5); 
+  -webkit-animation-iteration-count: infinite; 
+} 
+
+@-webkit-keyframes bounces { 
+  from { 
+    -webkit-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0); 
+  } 
+  to { 
+    -webkit-transform: translate3d(0, 10px, 20px); 
+    transform: translate3d(0, 30px, 20px); 
+  } 
+} 
 
 
 /*mob nav*/
@@ -1035,6 +1192,7 @@ h3 {
   right: 0;
   margin: auto;
   top: 11px;
+  
 }
 
 /* line 28, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_slick-nav.scss */
@@ -1104,17 +1262,19 @@ h3 {
 /* line 78, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_slick-nav.scss */
 .slicknav_btn {
   background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 99;
-  border: none;
-  border-radius: 3px;
-  padding: 5px;
-  right: 0;
-  margin-top: -25px;
-  top: -53px;
-  right: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 99;
+    border: none;
+    border-radius: 3px;
+    top: 5px;
+    padding: 5px;
+    right: 0;
+    margin-top: -5px;
+    top: -53px;
+    right: 5px;
 }
 
 /* line 1, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_header.scss */
