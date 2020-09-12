@@ -10,6 +10,8 @@
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,71 +29,95 @@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<body onload="myFunction()" >
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                 <li><a href="Case_details.html">Case  details</a></li>
-                                                 <li><a href="about.html">about</a></li>
-                                                 <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="Case_Study.html">Case Study</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="Appointment">
-                                <div class="book_btn d-none d-lg-block">
-                                    <a  href="#"> <i class="fa fa-phone"></i> +10 673 567 367</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+    <!--disable right click-->
+     <script>document.oncontextmenu = new Function("return false;");</script>
+         
+   <!-- Preloader Start -->
+   <div id="loader">
+   <div id="preloader-active">
+       <div class="preloader d-flex align-items-center justify-content-center">
+           <div class="preloader-inner position-relative">
+               <div class="preloader-circle"></div>
+               <div class="preloader-img pere-text">
+                   <img src="img/circle.png" alt="">
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+   <!-- Preloader Start -->
 
-                </div>
-            </div>
-        </div>
-    </header>
+   <div style="display:none;" id="myDiv" class="animate-bottom">
+
+   <!--[if lte IE 9]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+       <![endif]-->
+
+   <!-- header-start -->
+   <header>
+       <div class="header-area ">
+           <div id="sticky-header" class="main-header-area">
+               <div class="container-fluid">
+                   <div class="row align-items-center">
+                       <div class="col-xl-3 col-lg-2">
+                           <div class="logo">
+                               <a href="index.html"> 
+                                   <h1 class="anim" style="font-family: magneto; font-style: normal;
+                                   font-weight: 900; font-size: 3em; background: -webkit-linear-gradient(rgb(244, 119, 255), rgb(68, 48, 253));
+                                   -webkit-background-clip: text;
+                                   -webkit-text-fill-color: transparent; z-index:1">WR</h1>                    
+                                           </a>
+                           </div>
+                       </div>
+                       <div class="col-xl-6 col-lg-7">
+                           <div class="main-menu  d-none d-lg-block">
+                               <nav>
+                                   <ul id="navigation">
+                                       <li><a href="index.html">home</a></li>
+                                       <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                           <ul class="submenu">
+                                               <li><a href="Case_details.html">Case  details</a></li>
+                                               <li><a href="about.html">about</a></li>
+                                               <li><a href="elements.html">elements</a></li>
+                                           </ul>
+                                       </li>
+                                       <li><a href="services.html">Services</a></li>
+                                       <li><a href="Case_Study.html">Case Study</a></li>
+                                       <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                           <ul class="submenu">
+                                               <li><a href="blog.html">blog</a></li>
+                                               <li><a href="single-blog.html">single-blog</a></li>
+                                           </ul>
+                                       </li>
+                                       <li><a href="contact.html">Contact</a></li>
+                                   </ul>
+                               </nav>
+                           </div>
+                       </div>
+                       <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                           <div class="Appointment">
+                               <div class="book_btn d-none d-lg-block">
+                                   <a  href="#"> <i class="fa fa-phone"></i> +91 9667267972</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-12">
+                           <div class="mobile_menu d-block d-lg-none"></div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+   </header>
     <!-- header-end -->
 
     <!-- bradcam_area  -->
     <div class="bradcam_area">
         <div class="bradcam_shap">
-            <img src="img/ilstrator/bradcam_ils.png" alt="">
+            <img class="balls" src="img/ilstrator/bradcam_ils.png" alt="">
         </div>
         <div class="container">
             <div class="row">
@@ -122,10 +148,13 @@
                 </div>
                 <div class="col-xl-7 col-md-7">
                     <div class="company_info">
-                        <h3>We are an SEO company that <br>
-                            specializes in developing.</h3>
-                            <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing. Apartments frequently or motionless on reasonable.
-                                Steem spirit temper too say adieus who direct esteem.</p>
+                        <h3>We are a Web Agency with<br>
+                            expertise in Online Business.</h3>
+                            <p>In the business world in 2020 is shook by competition and is being crushed 
+
+                                by global economic crises. Now, it is extremely necessary for the local  
+                               
+                               businesses to go online and increase range. With Professionally crafted Websites, Webapps, Business Listings and Social Media.</p>
 
                         <a href="#" class="boxed-btn3">About Us</a>
                     </div>
@@ -136,140 +165,141 @@
     <!--/ compapy_info  -->
 
 
-    <!-- accordion_area  -->
-    <div class="accordion_area">
-        <div class="container">
-            <div class="row align-items-center">
 
-                <div class="col-xl-6 col-lg-6">
-                    <div class="faq_ask">
-                        <h3>Why Choose Us</h3>
-                            <div id="accordion">
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Adieus who direct esteem <span>It esteems luckily?</span>
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
-                                            <div class="card-body">Esteem spirit temper too say adieus who direct esteem esteems luckily or picture placing drawing.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                        Who direct esteem It esteems?
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
-                                            <div class="card-body">Esteem spirit temper too say adieus who direct esteem esteems luckily or picture placing drawing.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Duis consectetur feugiat auctor?
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
-                                            <div class="card-body">Esteem spirit temper too say adieus who direct esteem esteems luckily or picture placing drawing.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="accordion_thumb">
-                        <img src="img/banner/accordion.png" alt="">
-                    </div>
-                </div>
-            </div>
+
+  
+     <!-- bradcam_area  -->
+     <div class="bradcam_area">
+        <div class="bradcam_shap">
+            <img src="img/ilstrator/bradcam_ils.png" alt="">
         </div>
-
-    </div>
-    <!--/ accordion_area  -->
-
-
-    <!-- features_area  -->
-    <div class="features_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section_title text-center">
-                        <h3>We have some awesome features <br>
-                            to rank your business</h3>
-                            <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or <br> picture placing drawing. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_1.svg" alt="">
-                        </div>
-                        <h4>Custom design</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_2.svg" alt="">
-                        </div>
-                        <h4>Paid Search result</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_3.svg" alt="">
-                        </div>
-                        <h4>Global Search option</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_4.svg" alt="">
-                        </div>
-                        <h4>Email Marketing</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_5.svg" alt="">
-                        </div>
-                        <h4>Custom Software</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_feature">
-                        <div class="icon">
-                            <img src="img/svg_icon/feature_6.svg" alt="">
-                        </div>
-                        <h4>Setup business goal</h4>
-                        <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                    <div class="bradcam_text text-center">
+                        <h3>Services</h3>
+                        <nav class="brad_cam_lists">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Services</li>
+                              </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ features_area  -->
+    <!-- /bradcam_area  -->
+<!-- service_area  -->
+<div class="service_area minus_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/seo_1.svg" alt="">
+                    </div>
+                    <h3>SEO/SEM</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.</p>
+                    <a href="#" class="boxed-btn3-text">Learn More</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/seo_2.svg" alt="">
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.</p>
+                    <a href="#" class="boxed-btn3-text">Learn More</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/seo_3.svg" alt="">
+                    </div>
+                    <h3>Social Media</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.</p>
+                    <a href="#" class="boxed-btn3-text">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--/ service_area  -->
+  <!-- features_area  -->
+  <div class="features_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center">
+                    <h3>We have some awesome features <br>
+                        to rank your business</h3>
+                        <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or <br> picture placing drawing. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_1.svg" alt="">
+                    </div>
+                    <h4>Custom design</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_2.svg" alt="">
+                    </div>
+                    <h4>Paid Search result</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_3.svg" alt="">
+                    </div>
+                    <h4>Global Search option</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_4.svg" alt="">
+                    </div>
+                    <h4>Email Marketing</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_5.svg" alt="">
+                    </div>
+                    <h4>Custom Software</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_feature">
+                    <div class="icon">
+                        <img src="img/svg_icon/feature_6.svg" alt="">
+                    </div>
+                    <h4>Setup business goal</h4>
+                    <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ features_area  -->
 
     <!-- testimonial_area  -->
     <div class="testimonial_area ">
@@ -360,8 +390,10 @@
                             <div class="footer_widget">
                                 <div class="footer_logo">
                                     <a href="#">
-                                        <img src="img/footer_logo.png" alt="">
-                                    </a>
+                                        <h1 style="font-family: magneto, sans-serif; font-style: normal;
+                                        font-weight: 900; font-size: 3em; background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent; ">WR</h1>                                    </a>
                                 </div>
                                 <p>
                                         Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing.
@@ -475,6 +507,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 600);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+
+
 </body>
 
 </html>
