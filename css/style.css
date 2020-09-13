@@ -76,9 +76,10 @@ svg {
 .anim{
   position: relative;
   animation-name: logo;
-  animation-duration: 4s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-direction:alternate-reverse;
 }
 
 @keyframes logo{
@@ -294,6 +295,7 @@ body {
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0px;  /* Remove scrollbar space */
